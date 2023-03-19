@@ -1,0 +1,175 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{black}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+\usepackage[english,russian]{babel}
+% adjust the page margins
+\usepackage[scale=0.82]{geometry}
+%\setlength{\hintscolumnwidth}{2cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+
+% personal data
+\name{Sergey}{Yashchenko}
+\title{Senior Software Systems Analyst}                               % optional, remove / comment the line if not wanted
+\address{32 years old}{Moscow, Russian Federation}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+% optional, remove / comment the line if not wanted
+%phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{syurievich@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{linkedin.com/in/sergeyyurievich}
+% optional, remove / comment the line if not wanted
+\extrainfo{Telegram: @SergeyYurievich}
+%extrainfo{Skype: sy\_gia} % optional, remove / comment the line if not wanted
+\photo[68pt][0pt]{CV3}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{\ \ \ \ \ 2015\ \ \ \ \ 2007}{Higher Professional Education - Information Security Specialist Degree \newline{}National Research Nuclear University MEPhI, Moscow}{\newline{Faculty of Cybernetics and Information Security}}{Department of Strategic information researches}{\textit{Speciality 090104 - “Comprehensive protection of information facilities” }}{Diploma thesis - “Penetration testing methodology for wireless local area networks assessment”}  % arguments 3 to 6 can be left empty
+
+\section{Competences}
+\cvlistdoubleitem[\Neutral]{Requirements gathering}{Requirements analysis and specification}
+\cvlistdoubleitem[\Neutral]{UI wireframes and API design}{Request processing logic}
+\cvlistdoubleitem[\Neutral]{Integration design}{Writing hardcore sequences}
+\cvlistdoubleitem[\Neutral]{Backlog management and tasking}{Functional acceptance testing}
+\cvline{Tools}{Jira, Confluence, Postman, Swagger, Miro, PlantUML, Draw.io, Camunda BPMN, Kafka, RabbitMQ}
+%
+
+
+\section{Work history}
+
+\cventry{04.2022 01.2023}{Systems Analyst}{Leroy Merlin Vostok LLC }{Moscow}{}{\url{https://tech.leroymerlin.ru/}\newline{} Collaborated on the development of the technological platform in the Order Execution department at Leroy Merlin. Responsible for managing changes to the orchestrator, which controls all adjacent systems involved in order execution, from creation to delivery to the customer.%
+\begin{itemize}
+\item Supported the successful integration of new functionality into the orchestrator.
+\item Investigated and resolved critical incidents caused by constant feature implementation in outer parts of system.
+\item Was part of the core team of analysts who develop the corporation's analytics community.
+\end{itemize}}
+
+\cventry{09.2021 -- 03.2022}{Lead Business Analyst}{IT Prospekt LLC, St. Petersburg}{}{}{\url{https://chat2desk.com/}\newline{}Chat2Desk is a commercial product that provides users with centralized communication with customers through various messengers, as well as automated communication and metric collection. Responsible for full management of product analytics. Achievements included: \begin{itemize} \item Analyzed the system, created a functional map, and developed example mappings of cases;
+\item Разработал шаблоны аналитической документации;
+\item Наладил процессы взаимодействия аналитики и UX/UI;
+\item Расписал часть функциональности на развитие продукта на несколько спринтов;
+\item Инициировал процесс приведения всех API приложения к единому стандарту. 
+\end{itemize}}
+
+\cventry{Present 11.2015}{System Analyst}{PROF-IT Group}{Moscow, Russia}{}{(\url{http://prof-itgroup.ru})\newline{}
+Managing from scratch
+Project: Scorocode is a backend as a service platform for speeding up development process.
+\newline{}}
+\cventry{10.2015 06.2014}{System Analyst}{Paragon Software Group}{Moscow, Russia}{}{(\url{http://paragon-software.com})\newline{}
+Development of common educational electronic
+environment - created to fully digitise education in Russian schools (government project)
+Provided system analysis on "Moscow Electronic School" development project - crossplatform 
+an "electronic education system" "learning management system" for Moscow schools that provides integrated environment to support learning process. dnevnik.mos.ru (\url{http://dnevnik.mos.ru}; \url{http://uchebnik.mos.ru})\newline{}%
+\begin{itemize}
+\item 
+Выявление, анализ и формализация требований заказчика, управление требованиями, управление изменениями требований.
+\item Разработка предложений по реализации требований: моделирование процессов, проектирование баз данных, прототипирование интерфейсов, описание пользовательских историй и критериев приемки функциональности, разработка сценариев функционального тестирования.
+\item Постановка задач командам разработчиков.
+\item Проведение приемочного тестирования.
+\end{itemize}\newline{}}
+\cventry{04.2014 11.2013}{Операционный директор}{ООО «Биллинград»}{г. Москва}{}{(\url{http://billingrad.com})\newline{} Бизнес-анализ, системный анализ, проектное управление, организация документооборота, переговоры с контрагентами.
+\newline{}Участие в разработке и развитии услуг компании: управление требованиями, моделирование процессов, проектирование баз данных и API, разработка спецификаций, взаимодействие с внешними разработчиками, приемочное тестирование.}
+
+\cventry{04.2014 04.2012}{Руководитель проектов}{ООО «Глобал Инновейшн Аксес»}{г. Москва}{}{(\url{http://gia.vc})\newline{}Предоставление консультаций технологическим стартапам, бизнес-анализ, упаковка проектов, привлечение инвестиций в портфельные проекты, международное развитие проектов, работа с ключевыми фондами и партнерами.
+\newline{}Способствовал развитию двенадцати инновационных компаний, в том числе: резиденты Технопарка в сфере высоких технологий «ИТ-парк» (\textit{Startpack, Real Speaker, Guided Area, iProtect, Digital Loyality System}), проекты TGT-oil и НИ ИрГТУ.\newline{}}
+
+\cventry{04.2012 09.2007}{Инспектор системы контроля доступа}{АБ ГПБ-Ипотека ОАО}{г. Москва}{}{(\url{http://gpb-ipoteka.ru})\newline{}Выполнение задач, связанных с обеспечением контроля доступа, проектированием и внедрением систем видеонаблюдения и охранно-пожарной сигнализации. Выполнение прочих задач обеспечения информационной безопасности банка.
+\newline{}Разработал проект модернизации системы контроля доступа банка, успешно ввёл систему в эксплуатацию.}
+
+\section{Дополнительное образование, повышение квалификации}
+\cventry{\textit{\ \ \ \ \ 2016 \ \ \ \ \ 2015}}{Годовая программа проектного управления
+\newline{}Школа Менеджеров «Стратоплан», г. Москва}{}{}{}{Состав программы обучения: работа с командой, мотивация и целеполагание, коммуникации, переговоры, управление конфликтами, конструктивные конфронтации, постановка и контроль задач, обратная связь, деловая переписка, презентации и выступления, внедрение и управление организационными изменениями, управление проектами (PMI).}  % arguments 3 to 6 can be left empty
+\cventry{\textit{\ \ \ \ \ 2015 \ \ \ \ \ 2014}}{Cybersecurity Specialization\newline{}The University of Maryland, College Park}{}{}{}{\begin{itemize}
+\item Usable Security - пройден 
+\begin{itemize}
+\item Сертификат - \url{https://www.coursera.org/signature/certificate/WRFYBDFFLB}
+\end{itemize}
+\item Software Security - пройден с отличием
+\begin{itemize}
+\item Сертификат - \url{https://www.coursera.org/signature/certificate/6UWR9DTNUQ}
+\end{itemize}
+\item Cryptography 
+\item Hardware Security
+\item Cybersecurity Capstone Project
+\end{itemize}}  % arguments 3 to 6 can be left empty
+
+\section{Знание языков}
+\cvitemwithcomment{Русский}{Свободное владение}{Родной язык}
+\cvitemwithcomment{Английский}{Pre-Intermediate}{Для Intermediate недостаточно разговорной практики}
+\cvitemwithcomment{Ирландский}{Базовые знания}{}
+
+\section{Навыки}
+\cvdoubleitem{Технологии}{WEB, платформы}{СУБД}{PostgreSQL, MySQL, MongoDB}
+\cvdoubleitem{ОС}{Продвинутый пользователь OSx, Linux, Android, Windows}{Языки}{Базовое владение - R, Ruby \newline{} Знаком с - Python, Java, PHP, JS}
+\cvdoubleitem{Прототипы}{Создание прототипов UI, API}{Нотации}{UML, IDEFx, BPMN}
+
+\section{Интересы}
+\cvitem{Проектное управление}{Развиваю управленческие и аналитические навыки, изучаю практики руководства Business Analysis Body of Knowledge}
+\cvitem{Безопасность информации}{Активно интересуюсь практическими аспектами информационной безопасности, в ближайшем будущем планирую пройти обучение методологиям (OWASP, OSSTMM и др.), а также пройти сертификацию Certified Ethical Hacker}
+\cvitem{Data Science}{Интересуюсь проблематикой анализа данных в качестве хобби, в будущем планирую принимать участие в проектах платформы Kaggle}
+
+\section{Личные качества}
+\cvlistdoubleitem{Модельное мышление}{Аналитический склад ума}
+\cvlistdoubleitem{Умение расставлять приоритеты}{Стремление к самообучению}
+
+\section{Рекомендации}
+\begin{cvcolumns}
+  \cvcolumn[0.35]{Дмитрий Кузнецов}{Paragon Software Group \newline{}Глава Департамента глобальных онлайн сервисов \newline{} +79037487903}
+  \cvcolumn{Роман Сиваков}{ООО «Биллинград» \newline{}Chief Executive Officer \newline{}\newline{} +79261126211}
+  \cvcolumn[0.37]{Renata Akhunova}{Global Innovation Access USA \newline{} Chief Executive Officer \newline{}\newline{} +14152169278}
+\end{cvcolumns}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
