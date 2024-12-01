@@ -10,7 +10,7 @@
 
 % moderncv themes
 \moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{black}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\moderncvcolor{purple}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 %\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 \nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
@@ -19,15 +19,15 @@
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 \usepackage[english,russian]{babel}
 % adjust the page margins
-\usepackage[scale=0.82]{geometry}
+\usepackage[scale=0.9]{geometry}
 %\setlength{\hintscolumnwidth}{2cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 
 % personal data
 \name{Sergey}{Yashchenko}
-\title{Senior Software Systems Analyst}                               % optional, remove / comment the line if not wanted
-\address{32 years old}{Moscow, Russian Federation}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\title{Lead Software Systems Analyst}                               % optional, remove / comment the line if not wanted
+\address{34 years old}{Moscow, Russian Federation}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
 % optional, remove / comment the line if not wanted
 %phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
 %phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
@@ -67,8 +67,16 @@
 \cvline{Tools}{Jira, Confluence, Postman, Swagger, Miro, PlantUML, Draw.io, Camunda BPMN, Kafka, RabbitMQ}
 %
 
+\section{Experience in system analysis}
+\subsection{10 years, 10 months}
 
-\section{Work history}
+\cventry{06.2022 present time}{Lead systems analyst}{LLC AGIMA Interactive}{Moscow}{}{\url{https://agima.ru/}\newline{} I lead systems analysis on software development projects for AGIMA clients. During my tenure:%
+\begin{itemize}
+\item I lead systems analysis on a project for the implementation of a corporate learning management system for NLMK with a team of 3 people;
+\item Implemented analysis for development an order management system for a major car dealer;
+\item Under my supervision, my team reverse-engineered Leroy Merlin's employees loyalty internal subsystem and documented it from scratch. 
+\end{itemize}}
+
 
 \cventry{04.2022 01.2023}{Systems Analyst}{Leroy Merlin Vostok LLC }{Moscow}{}{\url{https://tech.leroymerlin.ru/}\newline{} Collaborated on the development of the technological platform in the Order Execution department at Leroy Merlin. Responsible for managing changes to the orchestrator, which controls all adjacent systems involved in order execution, from creation to delivery to the customer.%
 \begin{itemize}
@@ -77,79 +85,64 @@
 \item Was part of the core team of analysts who develop the corporation's analytics community.
 \end{itemize}}
 
-\cventry{09.2021 -- 03.2022}{Lead Business Analyst}{IT Prospekt LLC, St. Petersburg}{}{}{\url{https://chat2desk.com/}\newline{}Chat2Desk is a commercial product that provides users with centralized communication with customers through various messengers, as well as automated communication and metric collection. Responsible for full management of product analytics. Achievements included: \begin{itemize} \item Analyzed the system, created a functional map, and developed example mappings of cases;
-\item Разработал шаблоны аналитической документации;
-\item Наладил процессы взаимодействия аналитики и UX/UI;
-\item Расписал часть функциональности на развитие продукта на несколько спринтов;
-\item Инициировал процесс приведения всех API приложения к единому стандарту. 
+\cventry{09.2021 03.2022}{Lead Business Analyst}{IT Prospekt LLC, St. Petersburg}{}{}{\url{https://chat2desk.com/}\newline{}Chat2Desk is a commercial product that provides users with centralized communication with customers through various messengers, as well as automated communication and metric collection. Responsible for full management of product analytics. Achievements included:
+\begin{itemize} 
+\item Analyzed the system, created a functional map, and developed example mappings of cases;
+\item Developed templates for analytical documentation;
+\item Established processes for interaction between analytics and UX/UI;
+\item Planned part of the product functionality development over several sprints;
+\item Initiated the process of standardizing all application APIs.
 \end{itemize}}
 
-\cventry{Present 11.2015}{System Analyst}{PROF-IT Group}{Moscow, Russia}{}{(\url{http://prof-itgroup.ru})\newline{}
-Managing from scratch
-Project: Scorocode is a backend as a service platform for speeding up development process.
-\newline{}}
-\cventry{10.2015 06.2014}{System Analyst}{Paragon Software Group}{Moscow, Russia}{}{(\url{http://paragon-software.com})\newline{}
-Development of common educational electronic
-environment - created to fully digitise education in Russian schools (government project)
-Provided system analysis on "Moscow Electronic School" development project - crossplatform 
-an "electronic education system" "learning management system" for Moscow schools that provides integrated environment to support learning process. dnevnik.mos.ru (\url{http://dnevnik.mos.ru}; \url{http://uchebnik.mos.ru})\newline{}%
+
+\cventry{02.2019 09.2021}{Системный аналитик}{ООО «СТРИМ»}{г. Москва}{}{\url{https://stream.ru}\newline{} Полное ведение аналитики на нескольких проектах (Smart home app; Управление виртуальной АТС; IP messaging):%
 \begin{itemize}
-\item 
-Выявление, анализ и формализация требований заказчика, управление требованиями, управление изменениями требований.
-\item Разработка предложений по реализации требований: моделирование процессов, проектирование баз данных, прототипирование интерфейсов, описание пользовательских историй и критериев приемки функциональности, разработка сценариев функционального тестирования.
-\item Постановка задач командам разработчиков.
-\item Проведение приемочного тестирования.
-\end{itemize}\newline{}}
-\cventry{04.2014 11.2013}{Операционный директор}{ООО «Биллинград»}{г. Москва}{}{(\url{http://billingrad.com})\newline{} Бизнес-анализ, системный анализ, проектное управление, организация документооборота, переговоры с контрагентами.
-\newline{}Участие в разработке и развитии услуг компании: управление требованиями, моделирование процессов, проектирование баз данных и API, разработка спецификаций, взаимодействие с внешними разработчиками, приемочное тестирование.}
+\item Smart home app - ведение аналитики с идеи до коммерческого запуска проекта (бэкэнд, мобильные приложения);
+\item Управление виртуальной АТС - вёл редизайн личного кабинета (WEB);
+\item IP messaging - Интеграция с Apple Business Chat, Развитие проекта МТС RCS. 
+\end{itemize}}
 
-\cventry{04.2014 04.2012}{Руководитель проектов}{ООО «Глобал Инновейшн Аксес»}{г. Москва}{}{(\url{http://gia.vc})\newline{}Предоставление консультаций технологическим стартапам, бизнес-анализ, упаковка проектов, привлечение инвестиций в портфельные проекты, международное развитие проектов, работа с ключевыми фондами и партнерами.
-\newline{}Способствовал развитию двенадцати инновационных компаний, в том числе: резиденты Технопарка в сфере высоких технологий «ИТ-парк» (\textit{Startpack, Real Speaker, Guided Area, iProtect, Digital Loyality System}), проекты TGT-oil и НИ ИрГТУ.\newline{}}
+\cventry{11.2017 12.2018}{Аналитик}{ООО «АНсистемс» (GOST GROUP)}{г. Москва}{}{\url{https://gost-group.com}\newline{}Участвовал в развитиии функциональности системы "Интегрированная информационно-управляющая система наружного освещения города Москвы". \url{moslight.mos.ru}}%
 
-\cventry{04.2012 09.2007}{Инспектор системы контроля доступа}{АБ ГПБ-Ипотека ОАО}{г. Москва}{}{(\url{http://gpb-ipoteka.ru})\newline{}Выполнение задач, связанных с обеспечением контроля доступа, проектированием и внедрением систем видеонаблюдения и охранно-пожарной сигнализации. Выполнение прочих задач обеспечения информационной безопасности банка.
-\newline{}Разработал проект модернизации системы контроля доступа банка, успешно ввёл систему в эксплуатацию.}
+\cventry{08.2017 10.2017}{Бизнес аналитик}{ООО «Фаберлик»}{г. Москва}{}{\url{https://faberlic.com}\newline{}Участвовал в развитиии функциональности платформы \url{https://faberlic.com}:%
+}
+
+\cventry{11.2015 07.2017}{Системный аналитик}{ООО «ПРОФ-ИТ Венчурс» (PROF-IT GROUP)}{г. Москва}{}{\url{http://scorocode.ru}\newline{}Участвовал в реализации российской backend-as-a-service платформы Scorocode с этапа идеи до коммерческого запуска в роли системного аналитика%
+}
+
+\cventry{06.2014 10.2015}{Аналитик}{ООО «Интерактив Дата» (Paragon Software Group)}{г. Москва}{}{(\url{http://paragon-software.com})\newline{}Участвовал в реализации государственного проекта «Электронная информационно--образовательная среда» (\url{http://dnevnik.mos.ru}; \url{http://uch ebnik.mos.ru}) в качестве системного аналитика:%
+}
+
+\cventry{11.2013 04.2014}{Операционный директор}{ООО «Биллинград»}{г. Москва}{}{(\url{http://billingrad.com})\newline{} Бизнес-анализ, системный анализ, проектное управление, организация документооборота, переговоры с контрагентами.
+}
+
+\cventry{04.2012 04.2014}{Руководитель проектов}{ООО «Глобал Инновейшн Аксес»}{г. Москва}{}{(\url{http://gia.vc})\newline{}Предоставление консультаций технологическим стартапам, бизнес-анализ, упаковка проектов, привлечение инвестиций в портфельные проекты, международное развитие проектов, работа с ключевыми фондами и партнерами.
+\newline{}Способствовал развитию двенадцати инновационных компаний, в том числе: резиденты Технопарка в сфере высоких технологий «ИТ-парк» (\textit{Startpack, Real Speaker, Guided Area, iProtect, Digital Loyality System}), проекты TGT-oil и НИ ИрГТУ.}
+
+\cventry{09.2007 04.2012}{Инспектор системы контроля доступа}{АБ ГПБ-Ипотека ОАО}{г. Москва}{}{(\url{http://gpb-ipoteka.ru})\newline{}Выполнение задач, связанных с обеспечением контроля доступа, проектированием и внедрением систем видеонаблюдения и охранно-пожарной сигнализации. Выполнение прочих задач обеспечения информационной безопасности банка.}
 
 \section{Дополнительное образование, повышение квалификации}
-\cventry{\textit{\ \ \ \ \ 2016 \ \ \ \ \ 2015}}{Годовая программа проектного управления
-\newline{}Школа Менеджеров «Стратоплан», г. Москва}{}{}{}{Состав программы обучения: работа с командой, мотивация и целеполагание, коммуникации, переговоры, управление конфликтами, конструктивные конфронтации, постановка и контроль задач, обратная связь, деловая переписка, презентации и выступления, внедрение и управление организационными изменениями, управление проектами (PMI).}  % arguments 3 to 6 can be left empty
-\cventry{\textit{\ \ \ \ \ 2015 \ \ \ \ \ 2014}}{Cybersecurity Specialization\newline{}The University of Maryland, College Park}{}{}{}{\begin{itemize}
-\item Usable Security - пройден 
-\begin{itemize}
-\item Сертификат - \url{https://www.coursera.org/signature/certificate/WRFYBDFFLB}
-\end{itemize}
-\item Software Security - пройден с отличием
-\begin{itemize}
-\item Сертификат - \url{https://www.coursera.org/signature/certificate/6UWR9DTNUQ}
-\end{itemize}
-\item Cryptography 
-\item Hardware Security
-\item Cybersecurity Capstone Project
-\end{itemize}}  % arguments 3 to 6 can be left empty
+\cventry{\textit{\ \ \ \ \ 2020 \ \ \ \ \ 2020}}{Software Product Management Specialization\newline{}University of Alberta, Canada}{}{}{}{}
+
+\cventry{\textit{\ \ \ \ \ 2017 \ \ \ \ \ 2018}}{Годовая программа проектного управления
+\newline{}Школа Менеджеров «Стратоплан», г. Москва}{}{}{}{}  % arguments 3 to 6 can be left empty
+\cventry{\textit{\ \ \ \ \ 2014 \ \ \ \ \ 2015}}{Cybersecurity Specialization\newline{}The University of Maryland USA}{}{}{}{}  % arguments 3 to 6 can be left empty
+
 
 \section{Знание языков}
 \cvitemwithcomment{Русский}{Свободное владение}{Родной язык}
-\cvitemwithcomment{Английский}{Pre-Intermediate}{Для Intermediate недостаточно разговорной практики}
-\cvitemwithcomment{Ирландский}{Базовые знания}{}
+\cvitemwithcomment{English}{C1 (Advanced)}{Разговариваю и пишу без подготовки}
+\cvitemwithcomment{Português}{A1 (Básico)}{Закончил 2 семестр изучения языка}
 
 \section{Навыки}
-\cvdoubleitem{Технологии}{WEB, платформы}{СУБД}{PostgreSQL, MySQL, MongoDB}
-\cvdoubleitem{ОС}{Продвинутый пользователь OSx, Linux, Android, Windows}{Языки}{Базовое владение - R, Ruby \newline{} Знаком с - Python, Java, PHP, JS}
-\cvdoubleitem{Прототипы}{Создание прототипов UI, API}{Нотации}{UML, IDEFx, BPMN}
+\cvdoubleitem{Технологии}{WEB, Mobile}{СУБД}{MySQL, PostgreSQL, MongoDB}
+\cvdoubleitem{Языки}{Базовое владение - R, JavaScript, \newline{} SWIFT, Java, Kotlin}{Нотации}{UML, IDEFx, BPMN}
 
-\section{Интересы}
-\cvitem{Проектное управление}{Развиваю управленческие и аналитические навыки, изучаю практики руководства Business Analysis Body of Knowledge}
-\cvitem{Безопасность информации}{Активно интересуюсь практическими аспектами информационной безопасности, в ближайшем будущем планирую пройти обучение методологиям (OWASP, OSSTMM и др.), а также пройти сертификацию Certified Ethical Hacker}
-\cvitem{Data Science}{Интересуюсь проблематикой анализа данных в качестве хобби, в будущем планирую принимать участие в проектах платформы Kaggle}
-
-\section{Личные качества}
-\cvlistdoubleitem{Модельное мышление}{Аналитический склад ума}
-\cvlistdoubleitem{Умение расставлять приоритеты}{Стремление к самообучению}
-
-\section{Рекомендации}
+\section{Рекомендации (контактные данные по запросу)}
 \begin{cvcolumns}
-  \cvcolumn[0.35]{Дмитрий Кузнецов}{Paragon Software Group \newline{}Глава Департамента глобальных онлайн сервисов \newline{} +79037487903}
-  \cvcolumn{Роман Сиваков}{ООО «Биллинград» \newline{}Chief Executive Officer \newline{}\newline{} +79261126211}
-  \cvcolumn[0.37]{Renata Akhunova}{Global Innovation Access USA \newline{} Chief Executive Officer \newline{}\newline{} +14152169278}
+  \cvcolumn[0.37]{Анастасия Болонистова}{Leroy Merlin \newline{} Product Manager \newline{}}
+  \cvcolumn[0.35]{Ксения Слуцкая}{ООО "ИТ Проспект" \newline{} Руководитель разработки}
+  \cvcolumn{Николай Пронин}{ООО «СТРИМ» \newline{} Директор по проектам \newline{}}
 \end{cvcolumns}
 
 % Publications from a BibTeX file without multibib
